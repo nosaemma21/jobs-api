@@ -24,6 +24,10 @@ app.use(
     max: 100, //100 requests per minute
   })
 );
+app.get("/", (req, res) => {
+  res.send("Working perfectly");
+});
+
 app.use(express.json());
 app.use(helmet());
 app.use(cors());
