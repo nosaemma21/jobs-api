@@ -25,7 +25,7 @@ app.use(
   })
 );
 app.get("/", (req, res) => {
-  res.send(<h1>The Jobs API project</h1>);
+  res.send("<h1>The Jobs API project</h1>");
 });
 
 app.use(express.json());
